@@ -12,4 +12,7 @@ export default defineNuxtConfig({
     jwtSecret: process.env.NUXT_PRIVATE_JWT_SECRET || "default-secret",
     jwtExpiresIn: process.env.NUXT_PRIVATE_JWT_EXPIRES_IN || "1d",
   },
+  nitro: {
+    preset: 'cloudflare-pages'
+  }
 });
